@@ -3,8 +3,8 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // importante
 import { Header, Footer } from "../components/MainComponents";
 import { HeroNoCall } from "../components/Hero";
 
-export default function CasaArtisti() {
-  const primaryText = "La Casa degli Artisti";
+export default function PersonaggiAllucinati() {
+  const primaryText = "Personaggi Allucinati";
   const hero = "A paragraph of placeholder text. We’re using it here to show the use of the clearfix class. We’re adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.";
   const personaggi_description = "A paragraph of placeholder text. We’re using it here to show the use of the clearfix class. We’re adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.";
 
@@ -14,7 +14,7 @@ export default function CasaArtisti() {
 
       {/* Content */}
       <div className="overflow-hidden">
-        <img src="/artisti/artisti_lunapark.jpg" className="img-fluid w-100" alt="Casa Artisti" style={{ maxHeight: "16rem", objectFit: "cover" }} />
+        <img src="/artisti/artisti_lunapark.jpg" className="img-fluid w-100" alt="PersonaggiAllucinati" style={{ maxHeight: "16rem", objectFit: "cover" }} />
       </div>
       <HeroNoCall secondaryText={primaryText} descriptionPrimary={hero} />
 
