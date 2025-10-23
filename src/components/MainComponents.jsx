@@ -1,12 +1,12 @@
 export function Header() {
   return (
-    <nav class="navbar bg-dark border-bottom border-body">
-      <div class="container-fluid flex-column">
-        <figure class="navbar-brand text-center mb-0">
-          <blockquote class="blockquote">
+    <nav className="navbar bg-dark border-bottom border-body">
+      <div className="container-fluid flex-column">
+        <figure className="navbar-brand text-center mb-0">
+          <blockquote className="blockquote">
             <p>Portfolio</p>
           </blockquote>
-          <figcaption class="blockquote-footer mb-0">
+          <figcaption className="blockquote-footer mb-0">
             <cite>Rachele Pelliccioni</cite>
           </figcaption>
         </figure>
@@ -17,15 +17,15 @@ export function Header() {
 
 export function Footer() {
   return (
-    <nav class="navbar bg-dark">
-      <div class="container-fluid">
+    <nav className="navbar bg-dark">
+      <div className="container-fluid">
 
-        <div class="col-md-3 text-center">
-          <span class="lead">Rachele Pelliccioni</span>
+        <div className="col-md-3 text-center">
+          <span className="lead">Rachele Pelliccioni</span>
         </div>
 
-        <div class="col text-start">
-          <span class="">© 2024</span>
+        <div className="col text-start">
+          <span className="">© 2024</span>
         </div>
 
       </div>

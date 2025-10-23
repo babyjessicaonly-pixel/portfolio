@@ -5,3 +5,10 @@ $bootstrap-icons-font-dir: "bootstrap-icons/font/fonts";
 #root {
     min-height: 100vh;
 }
+
+/* Carousel */
+.carousel-indicators [data-bs-target] {
+    width: 0.75rem !important;
+    height: 0.75rem !important;
+    border-radius: 50%;
+}
