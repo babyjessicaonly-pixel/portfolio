@@ -14,12 +14,12 @@ export default function PersonaggiAllucinati() {
 
       {/* Content */}
       <div className="overflow-hidden">
-        <img src="/artisti/artisti_lunapark.jpg" className="img-fluid w-100" alt="PersonaggiAllucinati" style={{ maxHeight: "16rem", objectFit: "cover" }} />
+        <img src="/avventure/personaggi_pazzi/pazzi_gatti.jpg" className="img-fluid w-100" alt="PersonaggiAllucinati" style={{ maxHeight: "16rem", objectFit: "cover" }} />
       </div>
       <HeroNoCall secondaryText={primaryText} descriptionPrimary={hero} />
 
       <div className="container text-center p-3" style={{ maxWidth: "48rem" }}>
-        <img src="/artisti/artisti_cocco.jpg" className="img-fluid" alt="Cocco" />
+        <img src="/avventure/personaggi_pazzi/crostalandia.jpg" className="img-fluid" alt="Cocco" />
       </div>
 
       <div className="container text-center p-3" style={{ maxWidth: "48rem" }}>
@@ -31,13 +31,13 @@ export default function PersonaggiAllucinati() {
           </div>
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img src="/artisti/scorri/artisti_cucina.jpg" className="d-block w-100" alt="..." />
+              <img src="/avventure/personaggi crosta/lay2.5_crostalandia_ciambella.jpg" className="d-block w-100" alt="..." />
             </div>
             <div className="carousel-item">
-              <img src="/artisti/scorri/artisti_finestra.jpg" className="d-block w-100" alt="..." />
+              <img src="/avventure/personaggi crosta/lay2.6_crostalandia_muffin.jpg" className="d-block w-100" alt="..." />
             </div>
             <div className="carousel-item">
-              <img src="/artisti/scorri/artisti_opera.jpg" className="d-block w-100" alt="..." />
+              <img src="/avventure/personaggi crosta/lay2.7_crostalandia_pulcino.jpg" className="d-block w-100" alt="..." />
             </div>
           </div>
           <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -53,7 +53,7 @@ export default function PersonaggiAllucinati() {
 
       <div className="bg-success w-100 p-3">
         <div className="container text-center p-3" style={{ maxWidth: "48rem" }}>
-          <img src="/artisti/artisti_natura.jpg" className="img-fluid" alt="Natura" />
+          <img src="/avventure/personaggi_pazzi/motocross.jpg" className="img-fluid" alt="moto" />
         </div>
 
         <div className="row mx-auto container text-center p-3" style={{ maxWidth: "48rem" }}>
@@ -61,37 +61,13 @@ export default function PersonaggiAllucinati() {
             <div id="carouselExampleIndicators2" className="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="10000" style={{ filter: "invert(1)", mixBlendMode: "screen" }}>
               <div className="carousel-inner">
                 <div className="carousel-item active">
-                  <img src="/artisti/personaggi/artisti_p1.jpg" className="d-block w-100" alt="..." />
+                  <img src="/avventure/personaggi moto/lay2.1_motocross_uccello.jpg" className="d-block w-100" alt="..." />
                 </div>
                 <div className="carousel-item">
-                  <img src="/artisti/personaggi/artisti_p2.jpg" className="d-block w-100" alt="..." />
+                  <img src="/avventure/personaggi moto/lay2.2_motocross_coniglio.jpg" className="d-block w-100" alt="..." />
                 </div>
                 <div className="carousel-item">
-                  <img src="/artisti/personaggi/artisti_p3.jpg" className="d-block w-100" alt="..." />
-                </div>
-                <div className="carousel-item">
-                  <img src="/artisti/personaggi/artisti_p4.jpg" className="d-block w-100" alt="..." />
-                </div>
-                <div className="carousel-item">
-                  <img src="/artisti/personaggi/artisti_p5.jpg" className="d-block w-100" alt="..." />
-                </div>
-                <div className="carousel-item">
-                  <img src="/artisti/personaggi/artisti_p6.jpg" className="d-block w-100" alt="..." />
-                </div>
-                <div className="carousel-item">
-                  <img src="/artisti/personaggi/artisti_p7.jpg" className="d-block w-100" alt="..." />
-                </div>
-                <div className="carousel-item">
-                  <img src="/artisti/personaggi/artisti_p8.jpg" className="d-block w-100" alt="..." />
-                </div>
-                <div className="carousel-item">
-                  <img src="/artisti/personaggi/artisti_p9.jpg" className="d-block w-100" alt="..." />
-                </div>
-                <div className="carousel-item">
-                  <img src="/artisti/personaggi/artisti_p10.jpg" className="d-block w-100" alt="..." />
-                </div>
-                <div className="carousel-item">
-                  <img src="/artisti/personaggi/artisti_p11.jpg" className="d-block w-100" alt="..." />
+                  <img src="/avventure/personaggi moto/lay2.3_motocross_maiale.jpg" className="d-block w-100" alt="..." />
                 </div>
               </div>
               <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
@@ -105,6 +81,13 @@ export default function PersonaggiAllucinati() {
             </div>
           </div>
 
+          <div className="container text-center p-3" style={{ maxWidth: "48rem" }}>
+        <img src="/avventure/personaggi_pazzi/taxi_piccione.jpg" className="img-fluid" alt="Cocco" />
+      </div>
+      <div className="container text-center p-3" style={{ maxWidth: "48rem" }}>
+        <img src="/avventure/viaggi_allucinati/allucina1_tramonto.jpg" className="img-fluid" alt="Cocco" />
+      </div>
+      
           <div className='col'>{personaggi_description}</div>
         </div>
       </div>
