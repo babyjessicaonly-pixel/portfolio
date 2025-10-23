@@ -19,10 +19,10 @@ export default function PersonaggiAllucinati() {
       <HeroNoCall secondaryText={primaryText} descriptionPrimary={hero} />
 
       <div className="container text-center p-3" style={{ maxWidth: "48rem" }}>
-        <img src="/avventure/personaggi_pazzi/crostalandia.jpg" className="img-fluid" alt="Cocco" />
+        <img src="/avventure/personaggi_pazzi/crostalandia.jpg" className="img-fluid" alt="crosta" />
       </div>
 
-      <div className="container text-center p-3" style={{ maxWidth: "48rem" }}>
+      <div className="container text-center p-3" style={{ maxWidth: "30rem" }}>
         <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
           <div className="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -84,7 +84,7 @@ export default function PersonaggiAllucinati() {
           <div className="container text-center p-3" style={{ maxWidth: "48rem" }}>
         <img src="/avventure/personaggi_pazzi/taxi_piccione.jpg" className="img-fluid" alt="Cocco" />
       </div>
-      <div className="container text-center p-3" style={{ maxWidth: "48rem" }}>
+         <div className="container text-center p-3" style={{ maxWidth: "48rem" }}>
         <img src="/avventure/viaggi_allucinati/allucina1_tramonto.jpg" className="img-fluid" alt="Cocco" />
       </div>
       
