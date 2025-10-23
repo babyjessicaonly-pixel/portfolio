@@ -1,6 +1,6 @@
-export default function CategoryThumb({ description, color }) {
+export default function CategoryThumb({ description, color, url = "#" }) {
   return (
-    <button class={`btn btn-${color} p-0 rounded-0 w-100`}>
+    <a class={`btn btn-${color} p-0 rounded-0 w-100`} role="button" href={url}>
       <div class="row ps-5 p-3 align-items-center">
         <div class="col text-start">
           <p className="lead mb-0">{description}</p>
@@ -9,6 +9,6 @@ export default function CategoryThumb({ description, color }) {
           <i class="bi bi-chevron-compact-right display-6"></i>
         </div>
       </div>
-    </button>
+    </a>
   );
 }
