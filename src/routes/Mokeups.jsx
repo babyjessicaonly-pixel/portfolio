@@ -14,7 +14,7 @@ export default function Mokeups() {
 
       {/* Content */}
       <div className="overflow-hidden">
-        <img src="/artisti/artisti_lunapark.jpg" className="img-fluid w-100" alt="Mokeups" style={{ maxHeight: "16rem", objectFit: "cover" }} />
+        <img src="/mockup/8.piatti/fiori_rossi.jpg" className="img-fluid w-100" alt="Mokeups" style={{ maxHeight: "16rem", objectFit: "cover" }} />
       </div>
       <HeroNoCall secondaryText={primaryText} descriptionPrimary={hero} />
 
