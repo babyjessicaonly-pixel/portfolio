@@ -16,7 +16,7 @@ export default function App() {
       {/* Content */}
       <Hero primaryText="Diario di" secondaryText="Metamorfosi" descriptionPrimary={hero} descriptionSecondary="(non c'è perfezione qui, solo verità)" action="Explore"/>
       <CategoryThumb description={categ_2} imgUrl="/artisti/artisti_lunapark.jpg" url="/la-casa-degli-artisti" />
-      <CategoryThumb description={categ_3} imgUrl="/avventure/personaggi_pazzi/pazzi_gatti.jpg" url="/personaggi-allucinati" />
+      <CategoryThumb description={categ_3} imgUrl="/avventure/viaggi_allucinati/allucina1_tramonto.jpg" url="/personaggi-allucinati" />
       <CategoryThumb description={categ_4} imgUrl="/mockup/8.piatti/fiori_rossi.jpg" url="/mokeups" />
 
       <Footer />
