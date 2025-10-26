@@ -106,7 +106,7 @@ export default function PersonaggiAllucinati() {
   
        <div className="container d-flex float-start p-3" style={{ maxWidth: "40rem" }}>
             <img src="/avventure/viaggi_allucinati/allucina2_castello.jpg" className="img-fluid" me-auto alt="ops" 
-            style={{ marginLeft: "1rem", borderRadius: "8px" , marginRight: "1rem"}}/>
+            style={{ marginLeft: "1rem", borderRadius: "8px" , marginRight: "4rem"}}/>
          <div className='lead text-light mt-2'>{allucinati_description}</div>
        </div>
 
