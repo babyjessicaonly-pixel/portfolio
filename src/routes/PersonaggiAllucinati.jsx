@@ -101,6 +101,18 @@ export default function PersonaggiAllucinati() {
         </div>
       </div>
 
+      <div class="h4 pb-2 mb-4 text-white border-bottom border-white">Title</div>
+
+       <div className="container d-flex p-3" style={{ maxWidth: "48rem" }}>
+        <div className="container d-flex p-3" style={{ maxWidth: "48rem" }}>
+          <img
+            src="/avventure/viaggi_allucinati/allucina2_castello.jpg"
+            className="img-fluid me-3"
+            alt="castello"
+          />
+        </div>
+      </div> 
+
       <Footer />
     </>
   )
