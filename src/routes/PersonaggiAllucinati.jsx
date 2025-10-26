@@ -9,6 +9,7 @@ export default function PersonaggiAllucinati() {
   const crostalandia_description = "We’re using it here to show the use of the clearfix class. We’re adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.";
   const moto_description = "We’re adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.";
   const personaggi_description = "A paragraph of placeholder text. We’re using it here to show the use of the clearfix class. We’re adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.";
+  const allucinati_description="ma che ne so dai funziona"
 
   return (
     <>
@@ -102,9 +103,11 @@ export default function PersonaggiAllucinati() {
       </div>
 
       <div class="h4 pb-2 mb-4 text-white border-bottom border-white text-center">Title</div>
-
-       <div className="container text-center p-3">
-            <img src="/avventure/viaggi_allucinati/allucina2_castello.jpg" className="img-fluid" me-auto alt="ops" />
+  
+       <div className="container d-flex float-start p-3" style={{ maxWidth: "40rem" }}>
+            <img src="/avventure/viaggi_allucinati/allucina2_castello.jpg" className="img-fluid" me-auto alt="ops" 
+            style={{ marginLeft: "1rem", borderRadius: "8px" , marginRight: "1rem"}}/>
+         <div className='lead text-light mt-2'>{allucinati_description}</div>
        </div>
 
       <div className="container text-center p-3" style={{ maxWidth: "48rem" }}>
