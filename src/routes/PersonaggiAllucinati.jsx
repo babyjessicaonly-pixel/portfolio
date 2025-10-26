@@ -110,16 +110,16 @@ export default function PersonaggiAllucinati() {
          <div className='lead text-light mt-2'>{allucinati_description}</div>
        </div>
 
-      <div className="container text-center p-3" style={{ maxWidth: "48rem" }}>
-            <img src="/avventure/viaggi_allucinati/allucina4_biscotto.jpg" className="img-fluid" alt="ops" />
+      <div className="container d-flex justify-content-between align-items-start p-3" style={{ maxWidth: "70rem" }}>
+            <img src="/avventure/viaggi_allucinati/allucina4_biscotto.jpg" className="img-fluid rounded float-end" alt="ops" 
+            style= {{ width: "48%", marginLeft: "4rem", borderRadius: "8px"}}/>
        </div>
 
-      <div className="container text-center p-3" style={{ maxWidth: "48rem" }}>
-            <img src="/avventure/viaggi_allucinati/allucina3_elefante.jpg" className="img-fluid" alt="ops" />
-       </div>
-
-       <div className="container text-center p-3" style={{ maxWidth: "48rem" }}>
-            <img src="/avventure/viaggi_allucinati/allucina5_gatto.jpg" className="img-fluid" alt="ops" />
+      <div className="container d-flex justify-content-between align-items-start" style={{ maxWidth: "70rem" }}>
+            <img src="/avventure/viaggi_allucinati/allucina3_elefante.jpg" className="img-fluid rounded float-start" alt="ops"
+            style={{ width: "48%", marginRight: "4rem", borderRadius: "8px"}} />
+            <img src="/avventure/viaggi_allucinati/allucina5_gatto.jpg" className="img-fluid rounded float-end" alt="ops" 
+            style={{ width: "48%", borderRadius: "8px"}} />
        </div>
 
       <Footer />
