@@ -116,6 +116,41 @@ export default function Mokeups() {
         </div>
       </div>
 
+   <div className="bg-black w-100 p-3">
+ <div className="container text-center p-3" style={{ maxWidth: "48rem" }}>
+     <div id="carouselExample" className="carousel slide">
+        <div className="carousel-inner">
+         <div className="carousel-item active">
+         <div className="carousel-item">
+           <img src="/mockup/8.piatti/fiori_rosa" className="d-block w-100" alt="ops"/>
+         </div>
+          <div className="carousel-item">
+           <img src="/mockup/8.piatti/fiori_viola" className="d-block w-100" alt="ops"/>
+         </div>
+          <div className="carousel-item">
+           <img src="/mockup/8.piatti/fiori_blu" className="d-block w-100" alt="ops"/>
+         </div>
+          <div className="carousel-item">
+           <img src="/mockup/8.piatti/fiori_azzurro" className="d-block w-100" alt="ops"/>
+         </div>
+          <div className="carousel-item">
+           <img src="/mockup/8.piatti/fiori_verde" className="d-block w-100" alt="ops"/>
+         </div>
+         </div>
+       </div>
+         <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+           <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+           <span className="visually-hidden">Previous</span>
+         </button>
+         <button className="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Next</span>
+         </button>
+         </div>
+     </div>
+
+
+
       <Footer />
     </>
   )
