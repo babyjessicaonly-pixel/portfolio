@@ -1,15 +1,18 @@
 import { useMemo } from "react";
+import favicon_inv from "/favicon_inv.svg";
 
 export function Header() {
   return (
     <nav className="navbar bg-dark border-bottom border-body">
       <div className="container-fluid flex-column">
-        <figure className="navbar-brand text-center mb-0">
+        <a className="navbar-brand d-inline-flex align-items-center text-decoration-none" href="/" aria-label="Portfolio · Rachele Pelliccioni">
+          <figure className="text-center mb-0">
           <p className="lead">Portfolio</p>
           <figcaption className="blockquote-footer mb-0">
             <cite>Rachele Pelliccioni</cite>
           </figcaption>
         </figure>
+        </a>
       </div>
     </nav>
   );
@@ -32,8 +35,9 @@ export function Footer() {
   const mainColumn = useMemo(() => {
     return (
       <>
-        <a className="d-inline-flex align-items-center text-decoration-none" href="/" aria-label="Bootstrap">
-          <p className="lead">{appName}</p>
+        <a className="d-inline-flex align-items-center text-decoration-none mb-4" href="/" aria-label="Bootstrap">
+          <img src={favicon_inv} alt="Logo" width="64" height="64" className="me-3" />
+          <span className="lead">{appName}</span>
         </a>
 
         <ul className="list-unstyled small">
