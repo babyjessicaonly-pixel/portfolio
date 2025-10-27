@@ -18,14 +18,14 @@ export default function Mokeups() {
       <HeroNoCall secondaryText={primaryText} descriptionPrimary={hero} />
 
 
-<div className="w-100 p-4" style={{ backgroundColor: "rgb(159,129,142)" }}>
-      <div className="container d-flex justify-content-between align-items-start" style={{ maxWidth: "60rem" }}>
-        <img src="/mockup/1.profumo/bona.jpg" className="img-fluid rounded float-start" alt="ops"
-          style={{ width: "48%", marginRight: "4rem", borderRadius: "8px" }} />
-        <img src="/mockup/1.profumo/mockup_profumo.jpg" className="img-fluid rounded float-end" alt="ops"
-          style={{ width: "48%", borderRadius: "8px" }} />
+      <div className="w-100 p-4" style={{ backgroundColor: "rgb(159,129,142)" }}>
+        <div className="container d-flex justify-content-between align-items-start" style={{ maxWidth: "60rem" }}>
+          <img src="/mockup/1.profumo/bona.jpg" className="img-fluid rounded float-start" alt="ops"
+            style={{ width: "48%", marginRight: "4rem", borderRadius: "8px" }} />
+          <img src="/mockup/1.profumo/mockup_profumo.jpg" className="img-fluid rounded float-end" alt="ops"
+            style={{ width: "48%", borderRadius: "8px" }} />
+        </div>
       </div>
-    </div>
 
 
       <div className="bg-success bg-opacity-75 w-100 p-4">
@@ -46,7 +46,7 @@ export default function Mokeups() {
         </div>
       </div>
 
-      <div className="w-100 p-4" style ={{ backgroundColor: "rgb(127,156,206)" }}>
+      <div className="w-100 p-4" style={{ backgroundColor: "rgb(127,156,206)" }}>
         <div className="container d-flex justify-content-between align-items-start" style={{ maxWidth: "60rem" }}>
           <img src="/mockup/3.shampoo/sfondi_rane.jpg" className="img-fluid rounded float-start" alt="ops"
             style={{ width: "48%", marginRight: "1rem", borderRadius: "8px" }} />
@@ -55,8 +55,32 @@ export default function Mokeups() {
         </div>
       </div>
 
-      <div className="container text-center p-3" style={{ maxWidth: "30rem" }}>
-        <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
+      <div className="container d-flex gap-5 justify-content-between p-3" >
+        <div id="carouselExampleIndicators2" className="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="10000" style={{ filter: "invert(1)", mixBlendMode: "screen", maxWidth: "30rem"}}>
+          <div className="carousel-inner">
+            <div className="carousel-item active">
+              <img src="/mockup/6.personaggi_bratz/BRATZ_1.jpg" className="d-block w-100" alt="..." />
+            </div>
+            <div className="carousel-item">
+              <img src="/mockup/6.personaggi_bratz/BRATZ_2.jpg" className="d-block w-100" alt="..." />
+            </div>
+            <div className="carousel-item">
+              <img src="/mockup/6.personaggi_bratz/BRATZ_3.jpg" className="d-block w-100" alt="..." />
+            </div>
+            <div className="carousel-item">
+              <img src="/mockup/6.personaggi_bratz/BRATZ_4.jpg" className="d-block w-100" alt="..." />
+            </div>
+          </div>
+          <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Previous</span>
+          </button>
+          <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel" data-bs-interval="10000" style={{ maxWidth: "30rem" }}>
           <div className="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -71,6 +95,12 @@ export default function Mokeups() {
             </div>
             <div className="carousel-item">
               <img src="/mockup/6.personaggi_bratz/mockup_accendini/mockup_accendino5.jpg" className="d-block w-100" alt="..." style={{ borderRadius: "8px" }} />
+            </div>
+            <div className="carousel-item">
+              <img src="/mockup/5.accendini/mockup_accendino1.jpg" className="d-block w-100" alt="..." style={{ borderRadius: "8px" }} />
+            </div>
+            <div className="carousel-item">
+              <img src="/mockup/5.accendini/mockup_accendino2.jpg" className="d-block w-100" alt="..." style={{ borderRadius: "8px" }} />
             </div>
           </div>
           <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -87,33 +117,7 @@ export default function Mokeups() {
       <div className="bg-black w-100 p-3">
 
         <div className="row mx-auto container text-center p-3" style={{ maxWidth: "48rem" }}>
-          <div className='col-md-8'>
-            <div id="carouselExampleIndicators2" className="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="10000" style={{ filter: "invert(1)", mixBlendMode: "screen" }}>
-              <div className="carousel-inner">
-                <div className="carousel-item active">
-                  <img src="/mockup/6.personaggi_bratz/BRATZ_1.jpg" className="d-block w-100" alt="..." />
-                </div>
-                <div className="carousel-item">
-                  <img src="/mockup/6.personaggi_bratz/BRATZ_2.jpg" className="d-block w-100" alt="..." />
-                </div>
-                <div className="carousel-item">
-                  <img src="/mockup/6.personaggi_bratz/BRATZ_3.jpg" className="d-block w-100" alt="..." />
-                </div>
-                <div className="carousel-item">
-                  <img src="/mockup/6.personaggi_bratz/BRATZ_4.jpg" className="d-block w-100" alt="..." />
-                </div>
-              </div>
-              <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
-                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span className="visually-hidden">Previous</span>
-              </button>
-              <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
-                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                <span className="visually-hidden">Next</span>
-              </button>
-            </div>
-          </div>
-
+          
           <div className='col'>{cosa_manca}</div>
         </div>
       </div>
@@ -123,20 +127,26 @@ export default function Mokeups() {
           <div id="carouselExampleIndicators3" className="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
             <div className="carousel-inner">
               <div className="carousel-item active">
-                  <img src="/mockup/8.piatti/fiori_rosa.jpg" className="d-block w-100" alt="ops" />
-                </div>
-                <div className="carousel-item">
-                  <img src="/mockup/8.piatti/fiori_viola.jpg" className="d-block w-100" alt="ops" />
-                </div>
-                <div className="carousel-item">
-                  <img src="/mockup/8.piatti/fiori_blu.jpg" className="d-block w-100" alt="ops" />
-                </div>
-                <div className="carousel-item">
-                  <img src="/mockup/8.piatti/fiori_azzurri.jpg" className="d-block w-100" alt="ops" />
-                </div>
-                <div className="carousel-item">
-                  <img src="/mockup/8.piatti/fiori_verde.jpg" className="d-block w-100" alt="ops" />
-                </div>
+                <img src="/mockup/8.piatti/fiori_rossi.jpg" className="d-block w-100" alt="ops" style={{ borderRadius: "8px" }} />
+              </div>
+              <div className="carousel-item">
+                <img src="/mockup/8.piatti/fiori_arancio.jpg" className="d-block w-100" alt="ops" style={{ borderRadius: "8px" }} />
+              </div>
+              <div className="carousel-item">
+                <img src="/mockup/8.piatti/fiori_rosa.jpg" className="d-block w-100" alt="ops" style={{ borderRadius: "8px" }} />
+              </div>
+              <div className="carousel-item">
+                <img src="/mockup/8.piatti/fiori_viola.jpg" className="d-block w-100" alt="ops" style={{ borderRadius: "8px" }} />
+              </div>
+              <div className="carousel-item">
+                <img src="/mockup/8.piatti/fiori_blu.jpg" className="d-block w-100" alt="ops" style={{ borderRadius: "8px" }} />
+              </div>
+              <div className="carousel-item">
+                <img src="/mockup/8.piatti/fiori_azzurri.jpg" className="d-block w-100" alt="ops" style={{ borderRadius: "8px" }} />
+              </div>
+              <div className="carousel-item">
+                <img src="/mockup/8.piatti/fiori_verde.jpg" className="d-block w-100" alt="ops" style={{ borderRadius: "8px" }} />
+              </div>
             </div>
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="prev">
               <span className="carousel-control-prev-icon" aria-hidden="true"></span>
