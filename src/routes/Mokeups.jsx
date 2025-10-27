@@ -1,6 +1,6 @@
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // importante
 
-import { Header, Footer } from "../components/MainComponents";
+import AppPageLayout from "../components/MainComponents";
 import { HeroNoCall } from "../components/Hero";
 
 export default function Mokeups() {
@@ -9,8 +9,7 @@ export default function Mokeups() {
   const cosa_manca = "allora ho messo le immagini ma tipo tabella fanno cagare, sopra volevo o mettere che scorrevano insieme tipo prima/dopo oppure non lo so dividere la riga in quattro, ci pensiamo. mentre per i caroselli volevo metterli anche loro uno a destra e uno a sinistra ma non so farlo, pero guarda che carini con i bordi tondi:)";
 
   return (
-    <>
-      <Header />
+    <AppPageLayout>
 
       {/* Content */}
       <div className="overflow-hidden">
@@ -18,40 +17,40 @@ export default function Mokeups() {
       </div>
       <HeroNoCall secondaryText={primaryText} descriptionPrimary={hero} />
 
-     <div className="container d-flex justify-content-between align-items-start" style={{ maxWidth: "60rem" }}>
-            <img src="/mockup/1.profumo/bona.jpg" className="img-fluid rounded float-start" alt="ops"
-            style={{ width: "48%", marginRight: "4rem", borderRadius: "8px"}} />
-            <img src="/mockup/1.profumo/mockup_profumo.jpg" className="img-fluid rounded float-end" alt="ops" 
-            style={{ width: "48%", borderRadius: "8px"}} />
-     </div>
+      <div className="container d-flex justify-content-between align-items-start" style={{ maxWidth: "60rem" }}>
+        <img src="/mockup/1.profumo/bona.jpg" className="img-fluid rounded float-start" alt="ops"
+          style={{ width: "48%", marginRight: "4rem", borderRadius: "8px" }} />
+        <img src="/mockup/1.profumo/mockup_profumo.jpg" className="img-fluid rounded float-end" alt="ops"
+          style={{ width: "48%", borderRadius: "8px" }} />
+      </div>
 
 
-  <div className="bg-success bg-opacity-75 w-100 p-4"> 
-     <div className="container d-flex justify-content-between align-items-start" style={{ maxWidth: "60rem" }}>
-            <img src="/mockup/2.insalata/sfondi_lumache.jpg" className="img-fluid rounded float-start" alt="ops"
-            style={{ width: "48%", marginRight: "4rem", borderRadius: "8px"}} />
-            <img src="/mockup/2.insalata/mockup_insalata.jpg" className="img-fluid rounded float-end" alt="ops" 
-            style={{ width: "48%", borderRadius: "8px"}} />
-     </div>
-   </div>
+      <div className="bg-success bg-opacity-75 w-100 p-4">
+        <div className="container d-flex justify-content-between align-items-start" style={{ maxWidth: "60rem" }}>
+          <img src="/mockup/2.insalata/sfondi_lumache.jpg" className="img-fluid rounded float-start" alt="ops"
+            style={{ width: "48%", marginRight: "4rem", borderRadius: "8px" }} />
+          <img src="/mockup/2.insalata/mockup_insalata.jpg" className="img-fluid rounded float-end" alt="ops"
+            style={{ width: "48%", borderRadius: "8px" }} />
+        </div>
+      </div>
 
-   <div className="bg-black w-100 p-4"> 
-     <div className="container d-flex justify-content-between align-items-start" style={{ maxWidth: "60rem" }}>
-            <img src="/mockup/4.bottiglie/animali_galleggianti.jpg" className="img-fluid rounded float-start" alt="ops"
-            style={{ width: "48%", marginRight: "4rem", borderRadius: "8px"}} />
-            <img src="/mockup/4.bottiglie/mockup_bottiglie.jpg" className="img-fluid rounded float-end" alt="ops" 
-            style={{ width: "48%", borderRadius: "8px"}} />
-     </div>
-   </div>
+      <div className="bg-black w-100 p-4">
+        <div className="container d-flex justify-content-between align-items-start" style={{ maxWidth: "60rem" }}>
+          <img src="/mockup/4.bottiglie/animali_galleggianti.jpg" className="img-fluid rounded float-start" alt="ops"
+            style={{ width: "48%", marginRight: "4rem", borderRadius: "8px" }} />
+          <img src="/mockup/4.bottiglie/mockup_bottiglie.jpg" className="img-fluid rounded float-end" alt="ops"
+            style={{ width: "48%", borderRadius: "8px" }} />
+        </div>
+      </div>
 
-   <div className="bg-primary bg-opacity-50 w-100 p-4"> 
-     <div className="container d-flex justify-content-between align-items-start" style={{ maxWidth: "60rem" }}>
-            <img src="/mockup/3.shampoo/sfondi_rane.jpg" className="img-fluid rounded float-start" alt="ops"
-            style={{ width: "48%", marginRight: "1rem", borderRadius: "8px"}} />
-            <img src="/mockup/3.shampoo/mockup_shampoo.jpg" className="img-fluid rounded float-end" alt="ops" 
-            style={{ width: "24%", borderRadius: "8px"}} />
-     </div>
-   </div>
+      <div className="bg-primary bg-opacity-50 w-100 p-4">
+        <div className="container d-flex justify-content-between align-items-start" style={{ maxWidth: "60rem" }}>
+          <img src="/mockup/3.shampoo/sfondi_rane.jpg" className="img-fluid rounded float-start" alt="ops"
+            style={{ width: "48%", marginRight: "1rem", borderRadius: "8px" }} />
+          <img src="/mockup/3.shampoo/mockup_shampoo.jpg" className="img-fluid rounded float-end" alt="ops"
+            style={{ width: "24%", borderRadius: "8px" }} />
+        </div>
+      </div>
 
       <div className="container text-center p-3" style={{ maxWidth: "30rem" }}>
         <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
@@ -62,13 +61,13 @@ export default function Mokeups() {
           </div>
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img src="/mockup/6.personaggi_bratz/mockup_accendini/mockup_accendino3.jpg" className="d-block w-100" alt="..." style={{ borderRadius: "8px"}} />
+              <img src="/mockup/6.personaggi_bratz/mockup_accendini/mockup_accendino3.jpg" className="d-block w-100" alt="..." style={{ borderRadius: "8px" }} />
             </div>
             <div className="carousel-item">
-              <img src="/mockup/6.personaggi_bratz/mockup_accendini/mockup_accendino4.jpg" className="d-block w-100" alt="..." style={{ borderRadius: "8px"}}/>
+              <img src="/mockup/6.personaggi_bratz/mockup_accendini/mockup_accendino4.jpg" className="d-block w-100" alt="..." style={{ borderRadius: "8px" }} />
             </div>
             <div className="carousel-item">
-              <img src="/mockup/6.personaggi_bratz/mockup_accendini/mockup_accendino5.jpg" className="d-block w-100" alt="..." style={{ borderRadius: "8px"}}/>
+              <img src="/mockup/6.personaggi_bratz/mockup_accendini/mockup_accendino5.jpg" className="d-block w-100" alt="..." style={{ borderRadius: "8px" }} />
             </div>
           </div>
           <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -116,42 +115,40 @@ export default function Mokeups() {
         </div>
       </div>
 
-   <div className="bg-black w-100 p-3">
- <div className="container text-center p-3" style={{ maxWidth: "48rem" }}>
-     <div id="carouselExample" className="carousel slide">
-        <div className="carousel-inner">
-         <div className="carousel-item active">
-         <div className="carousel-item">
-           <img src="/mockup/8.piatti/fiori_rosa" className="d-block w-100" alt="ops"/>
-         </div>
-          <div className="carousel-item">
-           <img src="/mockup/8.piatti/fiori_viola" className="d-block w-100" alt="ops"/>
-         </div>
-          <div className="carousel-item">
-           <img src="/mockup/8.piatti/fiori_blu" className="d-block w-100" alt="ops"/>
-         </div>
-          <div className="carousel-item">
-           <img src="/mockup/8.piatti/fiori_azzurro" className="d-block w-100" alt="ops"/>
-         </div>
-          <div className="carousel-item">
-           <img src="/mockup/8.piatti/fiori_verde" className="d-block w-100" alt="ops"/>
-         </div>
-         </div>
-       </div>
-         <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-           <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-           <span className="visually-hidden">Previous</span>
-         </button>
-         <button className="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Next</span>
-         </button>
-         </div>
-     </div>
+      <div className="bg-black w-100 p-3">
+        <div className="container text-center p-3" style={{ maxWidth: "48rem" }}>
+          <div id="carouselExample" className="carousel slide">
+            <div className="carousel-inner">
+              <div className="carousel-item active">
+                <div className="carousel-item">
+                  <img src="/mockup/8.piatti/fiori_rosa" className="d-block w-100" alt="ops" />
+                </div>
+                <div className="carousel-item">
+                  <img src="/mockup/8.piatti/fiori_viola" className="d-block w-100" alt="ops" />
+                </div>
+                <div className="carousel-item">
+                  <img src="/mockup/8.piatti/fiori_blu" className="d-block w-100" alt="ops" />
+                </div>
+                <div className="carousel-item">
+                  <img src="/mockup/8.piatti/fiori_azzurro" className="d-block w-100" alt="ops" />
+                </div>
+                <div className="carousel-item">
+                  <img src="/mockup/8.piatti/fiori_verde" className="d-block w-100" alt="ops" />
+                </div>
+              </div>
+            </div>
+            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span className="visually-hidden">Previous</span>
+            </button>
+            <button className="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span className="carousel-control-next-icon" aria-hidden="true"></span>
+              <span className="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
 
-
-
-      <Footer />
-    </>
-  )
+    </AppPageLayout>
+  );
 }
