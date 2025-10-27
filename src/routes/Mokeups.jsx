@@ -1,6 +1,6 @@
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // importante
 
-import { Header, Footer } from "../components/MainComponents";
+import AppPageLayout from "../components/MainComponents";
 import { HeroNoCall } from "../components/Hero";
 
 export default function Mokeups() {
@@ -9,9 +9,8 @@ export default function Mokeups() {
   const personaggi_description = "A paragraph of placeholder text. We’re using it here to show the use of the clearfix class. We’re adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.";
 
   return (
-    <>
-      <Header />
-
+    <AppPageLayout>
+      
       {/* Content */}
       <div className="overflow-hidden">
         <img src="/mockup/8.piatti/fiori_rossi.jpg" className="img-fluid w-100" alt="Mokeups" style={{ maxHeight: "16rem", objectFit: "cover" }} />
@@ -109,7 +108,6 @@ export default function Mokeups() {
         </div>
       </div>
 
-      <Footer />
-    </>
+    </AppPageLayout>
   )
 }

@@ -7,11 +7,11 @@ export function Header() {
       <div className="container-fluid flex-column">
         <a className="navbar-brand d-inline-flex align-items-center text-decoration-none" href="/" aria-label="Portfolio · Rachele Pelliccioni">
           <figure className="text-center mb-0">
-          <p className="lead">Portfolio</p>
-          <figcaption className="blockquote-footer mb-0">
-            <cite>Rachele Pelliccioni</cite>
-          </figcaption>
-        </figure>
+            <p className="lead">Portfolio</p>
+            <figcaption className="blockquote-footer mb-0">
+              <cite>Rachele Pelliccioni</cite>
+            </figcaption>
+          </figure>
         </a>
       </div>
     </nav>
@@ -103,5 +103,15 @@ export function Footer() {
         </div>
       </div>
     </footer>
+  );
+}
+
+export default function AppPageLayout({ children }) {
+  return (
+    <>
+      <Header />
+      <main>{children}</main>
+      <Footer />
+    </>
   );
 }

@@ -1,6 +1,6 @@
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // importante
 
-import { Header, Footer } from "../components/MainComponents";
+import AppPageLayout from "../components/MainComponents";
 import { HeroNoCall } from "../components/Hero";
 
 export default function PersonaggiAllucinati() {
@@ -11,8 +11,7 @@ export default function PersonaggiAllucinati() {
   const personaggi_description = "A paragraph of placeholder text. We’re using it here to show the use of the clearfix class. We’re adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.";
 
   return (
-    <>
-      <Header />
+    <AppPageLayout>
 
       {/* Content */}
       <div className="overflow-hidden">
@@ -90,11 +89,11 @@ export default function PersonaggiAllucinati() {
       </div>
 
       <div className="row bg-white p-5 w-100">
-        <div className="row mx-auto container text-center p-3" style={{ maxWidth: "48rem" }}>
+        <div className="row mx-auto container text-center p-3">
           <div className="container text-center p-3" style={{ maxWidth: "48rem" }}>
             <img src="/avventure/personaggi_pazzi/taxi_piccione.jpg" className="img-fluid" alt="Cocco" />
           </div>
-          <div className="container text-center p-3" style={{ maxWidth: "48rem" }}>
+          <div className="container text-center p-3 me-auto" style={{ maxWidth: "48rem" }}>
             <img src="/avventure/personaggi_pazzi/pazzi_gatti.jpg" className="img-fluid" alt="Cocco" />
           </div>
           <div className='col'>{personaggi_description}</div>
@@ -113,7 +112,6 @@ export default function PersonaggiAllucinati() {
         </div>
       </div> 
 
-      <Footer />
-    </>
+    </AppPageLayout>
   )
 }
