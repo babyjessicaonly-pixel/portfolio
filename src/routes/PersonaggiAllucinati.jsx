@@ -9,7 +9,8 @@ export default function PersonaggiAllucinati() {
   const crostalandia_description = "We’re using it here to show the use of the clearfix class. We’re adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.";
   const moto_description = "We’re adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.";
   const personaggi_description = "A paragraph of placeholder text. We’re using it here to show the use of the clearfix class. We’re adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.";
-  const allucinati_description="ma che ne so dai funziona. questo testo da fixare e anche l'immagine sotto di sicuro si bc la volevo a destra (vedi floated-end?) ma boh me la mette a destra a meta` anche perche` a sinistra volevo mettere la vignetta che mi bugga tutto"
+  const allucinati_description = "ma che ne so dai funziona. questo testo da fixare e anche l'immagine sotto di sicuro si bc la volevo a destra (vedi floated-end?) ma boh me la mette a destra a meta` anche perche` a sinistra volevo mettere la vignetta che mi bugga tutto"
+  const gpt_prompt = "Create a funny short story about crazy characters in a dreamlike adventure, involving a land made of pastries and animals riding motorcycles.";
 
   return (
     <AppPageLayout>
@@ -20,13 +21,19 @@ export default function PersonaggiAllucinati() {
       </div>
       <HeroNoCall secondaryText={primaryText} descriptionPrimary={hero} />
 
-      <div className="row bg-white p-5 w-100">
-        <div className="col-md-8">
+      {/* Crostalandia */}
+      <div className="row bg-white p-5">
+
+        {/* Crostalandia - Immagine */}
+        <div className="col-md-8 my-auto">
           <img src="/avventure/personaggi_pazzi/crostalandia.jpg" className="border img-fluid rounded-5 shadow" alt="crosta" />
         </div>
 
-        <div className="col-md-4 m-auto ms-3 text-dark gap-3" style={{ maxWidth: "30rem" }}>
-          <div id="carouselExampleIndicators" className="carousel slide carousel-fade border-top border-bottom" data-bs-ride="carousel" data-bs-interval="10000">
+        {/* Crostalandia - Personaggi */}
+        <div className="col-md-4 m-auto text-dark" style={{ maxWidth: "30rem" }}>
+
+          {/* Crostalandia Carousel */}
+          <div id="carouselExampleIndicators" className="carousel slide carousel-fade border-top border-bottom my-5" data-bs-ride="carousel" data-bs-interval="10000">
             <div className="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -53,13 +60,21 @@ export default function PersonaggiAllucinati() {
             </button>
           </div>
 
-          <p className='lead mt-5'>{crostalandia_description}</p>
+          {/* Crostalandia - Descrizione */}
+          <p className='lead my-5 text-end'>{crostalandia_description}</p>
+
         </div>
+
       </div>
 
-      <div className="row bg-warning p-5 w-100">
-        <div className="col-md-4 m-auto ms-3 text-dark gap-3" style={{ maxWidth: "30rem" }}>
-          <div id="carouselExampleIndicators2" className="carousel slide carousel-fade border-top border-bottom" data-bs-ride="carousel" data-bs-interval="10000" style={{ mixBlendMode: "multiply" }}>
+      {/* Motocross */}
+      <div className="row bg-warning p-5">
+
+        {/* Motocross - Personaggi */}
+        <div className="col-md-4 m-auto text-dark" style={{ maxWidth: "30rem" }}>
+
+          {/* Motocross Carousel */}
+          <div id="carouselExampleIndicators2" className="carousel slide carousel-fade border-top border-bottom my-5" data-bs-ride="carousel" data-bs-interval="10000" style={{ mixBlendMode: "multiply" }}>
             <div className="carousel-inner">
               <div className="carousel-item active">
                 <img src="/avventure/personaggi moto/lay2.1_motocross_uccello.jpg" className="d-block w-100" alt="..." />
@@ -81,46 +96,70 @@ export default function PersonaggiAllucinati() {
             </button>
           </div>
 
-          <p className='lead mt-5'>{moto_description}</p>
+          {/* Motocross - Descrizione */}
+          <p className='lead my-5'>{moto_description}</p>
+
         </div>
-        
-        <div className="col-md-8">
+
+        {/* Motocross - Immagine */}
+        <div className="col-md-8 my-auto">
           <img src="/avventure/personaggi_pazzi/motocross.jpg" className="border img-fluid rounded-5 shadow" alt="moto" />
         </div>
+
       </div>
 
-      <div className="row bg-white p-5 w-100">
+      {/* Piccione e gatti pazzi */}
+      <div className="row bg-white p-5">
         <div className="row mx-auto container text-center p-3">
+
           <div className="container text-center p-3" style={{ maxWidth: "48rem" }}>
             <img src="/avventure/personaggi_pazzi/taxi_piccione.jpg" className="img-fluid" alt="Cocco" />
           </div>
+
           <div className="container text-center p-3 me-auto" style={{ maxWidth: "48rem" }}>
             <img src="/avventure/personaggi_pazzi/pazzi_gatti.jpg" className="img-fluid" alt="Cocco" />
           </div>
-          <div className='col'>{personaggi_description}</div>
+
+          <p className='text-dark'>{personaggi_description}</p>
+
         </div>
       </div>
 
-      <div class="h4 pb-2 mb-4 text-white border-bottom border-white text-center">Title</div>
-  
-       <div className="container d-flex float-start p-3" style={{ maxWidth: "40rem" }}>
-            <img src="/avventure/viaggi_allucinati/allucina2_castello.jpg" className="img-fluid" me-auto alt="ops" 
-            style={{ marginLeft: "1rem", borderRadius: "8px" , marginRight: "4rem"}}/>
-       </div>
+      {/* Viaggi Allucinati - Castello Funghi */}
+      <p className="border-bottom display-4 p-3 text-center">Title</p>
+      <div className="container p-5">
+        <div className="d-flex flex-wrap justify-content-between align-items-center">
+          <div style={{ maxWidth: "30rem" }}>
+            <img src="/avventure/viaggi_allucinati/allucina2_castello.jpg" className="img-fluid rounded-3" alt="ops" />
+          </div>
+          <p className='lead text-light text-end' style={{ maxWidth: "30rem" }}>{allucinati_description}</p>
+        </div>
+      </div>
 
-       <div className='lead text-light mt-5'>{allucinati_description}</div>
+      {/* Viaggi Allucinati - GPT Prompt and Images */}
+      <div className="container p-5">
+        <div className="row row-cols-1 row-cols-lg-2 py-4">
 
-      <div className="container d-flex justify-content-between align-items-start p-3" style={{ maxWidth: "70rem" }}>
-            <img src="/avventure/viaggi_allucinati/allucina4_biscotto.jpg" className="img-fluid rounded float-end" alt="ops" 
-            style= {{ width: "48%", marginLeft: "4rem", borderRadius: "8px"}}/>
-       </div>
+          {/* GPT Prompt */}
+          <div className="col py-3">
+            <div className="w-75 bg-light text-dark px-3 py-2 ms-auto rounded-4">
+              <div className="my-1" style={{ whiteSpace: "pre-wrap", overflowWrap: "break-word" }}>{gpt_prompt}</div>
+            </div>
+          </div>
 
-      <div className="container d-flex justify-content-between align-items-start" style={{ maxWidth: "70rem" }}>
-            <img src="/avventure/viaggi_allucinati/allucina3_elefante.jpg" className="img-fluid rounded float-start" alt="ops"
-            style={{ width: "48%", marginRight: "4rem", borderRadius: "8px"}} />
-            <img src="/avventure/viaggi_allucinati/allucina5_gatto.jpg" className="img-fluid rounded float-end" alt="ops" 
-            style={{ width: "48%", borderRadius: "8px"}} />
-       </div>
+          {/* Images */}
+          <div className="col py-3">
+            <img src="/avventure/viaggi_allucinati/allucina4_biscotto.jpg" className="img-fluid rounded-3" alt="ops" />
+          </div>
+          <div className="col py-3">
+            <img src="/avventure/viaggi_allucinati/allucina3_elefante.jpg" className="img-fluid rounded-3" alt="ops" />
+          </div>
+          <div className="col py-3">
+            <img src="/avventure/viaggi_allucinati/allucina5_gatto.jpg" className="img-fluid rounded-3" alt="ops" />
+          </div>
+
+        </div>
+      </div>
 
     </AppPageLayout>
   )
