@@ -9,7 +9,7 @@ export default function PersonaggiAllucinati() {
   const crostalandia_description = "We’re using it here to show the use of the clearfix class. We’re adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.";
   const moto_description = "We’re adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.";
   const personaggi_description = "A paragraph of placeholder text. We’re using it here to show the use of the clearfix class. We’re adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.";
-  const allucinati_description="ma che ne so dai funziona"
+  const allucinati_description="ma che ne so dai funziona. questo testo da fixare e anche l'immagine sotto di sicuro si bc la volevo a destra (vedi floated-end?) ma boh me la mette a destra a meta` anche perche` a sinistra volevo mettere la vignetta che mi bugga tutto"
 
   return (
     <>
@@ -107,8 +107,9 @@ export default function PersonaggiAllucinati() {
        <div className="container d-flex float-start p-3" style={{ maxWidth: "40rem" }}>
             <img src="/avventure/viaggi_allucinati/allucina2_castello.jpg" className="img-fluid" me-auto alt="ops" 
             style={{ marginLeft: "1rem", borderRadius: "8px" , marginRight: "4rem"}}/>
-         <div className='lead text-light mt-2'>{allucinati_description}</div>
        </div>
+
+       <div className='lead text-light mt-5'>{allucinati_description}</div>
 
       <div className="container d-flex justify-content-between align-items-start p-3" style={{ maxWidth: "70rem" }}>
             <img src="/avventure/viaggi_allucinati/allucina4_biscotto.jpg" className="img-fluid rounded float-end" alt="ops" 
