@@ -113,7 +113,7 @@ export default function PersonaggiAllucinati() {
         <div className="row mx-auto container text-center p-3">
 
           <div className="container text-center p-3" style={{ maxWidth: "48rem" }}>
-            <img src="/avventure/personaggi_pazzi/taxi_piccione.jpg" className="img-fluid" alt="Cocco" />
+            <img src="/avventure/personaggi_pazzi/piccione_taxi.jpg" className="img-fluid" alt="Cocco" />
           </div>
 
           <div className="container text-center p-3 me-auto" style={{ maxWidth: "48rem" }}>
