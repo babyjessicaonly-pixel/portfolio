@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import App from './routes/App.jsx'
 import CasaArtisti from './routes/CasaArtisti.jsx'
 import PersonaggiAllucinati from './routes/PersonaggiAllucinati.jsx';
-import Mokeups from './routes/Mokeups.jsx';
+import Mokeups from './routes/Mokeups/SezioniMokeups.jsx';
 
 import './index.scss'
 
