@@ -23,10 +23,14 @@ export default function Mokeups() {
       <CaroselloBratz />
       <MiniPiatti cosa_manca={cosa_manca} />
 
-      {/* Felpe */}
-      <SezioniFelpe />
-      <CaroselloFelpeAstratte />
-      <CaroselloFelpeAnimaliSwag />
+      <FelpeNetflix />
+
+      <div className="w-100 bg-black">
+      <div className="container row mx-auto justify-content-center p-3">
+        <div className="col-auto col-md-6 my-auto"><CaroselloFelpeAstratte /></div>
+        <div className="col-auto col-md-6 my-auto"><CaroselloFelpeAnimaliSwag /></div>
+      </div>
+      </div>
 
     </AppPageLayout>
   );
@@ -207,7 +211,7 @@ function MiniPiatti({ cosa_manca }) {
   );
 }
 
-function SezioniFelpe() {
+function FelpeNetflix() {
   const primaryText = "Metterai un titolo fico qui dentro per le felpe";
   const secondaryText = "Scorri le felpe come schede di Netflix, quando passi sopra una felpa si ingrandisce leggermente per dare l'effetto hover.";
 
@@ -237,17 +241,18 @@ function CaroselloFelpeAstratte() {
   return (
     <>
       {/* Carosello felpe astratte */}
-      <div className="bg-black w-100 p-3">
-        <div className="container text-center p-3" style={{ maxWidth: "48rem" }}>
-          <div id={id} className="carousel slide carousel-white-arrows" data-bs-ride="carousel" data-bs-interval="10000">
+      <div className="p-3">
+        <div className="container text-center p-3">
+          <div id={id} className="carousel rounded slide carousel-white-arrows" data-bs-ride="carousel" data-bs-interval="10000">
             <div className="carousel-inner">
               <div className="carousel-item active">
-                <img src="/mockup/9.felpe/flower_explosion.jpg" className="d-block w-100" alt="ops" style={{ borderRadius: "8px" }} />
+                <img className="d-block mx-auto object-fit-contain" style={{ height: "16rem" }} src="/mockup/9.felpe/flower_explosion.jpg" alt="flower explosion" />
               </div>
               <div className="carousel-item">
-                <img src="/mockup/9.felpe/felpa4.1_mare.jpg" className="d-block w-100" alt="ops" style={{ borderRadius: "8px" }} />
+                <img className="d-block mx-auto object-fit-contain" style={{ height: "16rem" }} src="/mockup/9.felpe/felpa4.1_mare.jpg" alt="felpa4.1 mare" />
               </div>
             </div>
+
             <button className="carousel-control-prev" type="button" data-bs-target={`#${id}`} data-bs-slide="prev">
               <span className="carousel-control-prev-icon" aria-hidden="true"></span>
               <span className="visually-hidden">Previous</span>
@@ -277,15 +282,15 @@ function CaroselloFelpeAnimaliSwag() {
   return (
     <>
       {/* Carosello felpe animali swag */}
-      <div className="bg-black w-100 p-3">
-        <div className="container text-center p-3" style={{ maxWidth: "48rem" }}>
-          <div id={id} className="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
+      <div className="p-3">
+        <div className="container text-center p-3">
+          <div id={id} className="carousel rounded slide" data-bs-ride="carousel" data-bs-interval="10000">
             <div className="carousel-inner">
               <div className="carousel-item active">
-                <img src="/mockup/9.felpe/struzzo.jpg" className="d-block w-100" alt="ops" style={{ borderRadius: "8px" }} />
+                <img className="d-block w-100 object-fit-contain" style={{ height: "20rem" }} src="/mockup/9.felpe/struzzo.jpg" alt="struzzo" />
               </div>
               <div className="carousel-item">
-                <img src="/mockup/9.felpe/tartaruga.jpg" className="d-block w-100" alt="ops" style={{ borderRadius: "8px" }} />
+                <img className="d-block w-100 object-fit-contain" style={{ height: "20rem" }} src="/mockup/9.felpe/tartaruga.jpg" alt="tartaruga" />
               </div>
             </div>
             <button className="carousel-control-prev" type="button" data-bs-target={`#${id}`} data-bs-slide="prev">
