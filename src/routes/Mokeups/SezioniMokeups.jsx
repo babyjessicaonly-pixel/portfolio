@@ -28,9 +28,9 @@ export default function Mokeups() {
 
       <div className="w-100 bg-black">
         <div className="container row mx-auto justify-content-center gap-4 p-3">
-        <div className="col-auto col-md-6 my-auto"><CaroselloFelpeAstratte /></div>
-        <div className="col-auto col-md-6 my-auto"><CaroselloFelpeAnimaliSwag /></div>
-      </div>
+          <div className="col-auto col-md-6 my-auto"><CaroselloFelpeAstratte /></div>
+          <div className="col-auto col-md-6 my-auto"><CaroselloFelpeAnimaliSwag /></div>
+        </div>
       </div>
 
     </AppPageLayout>
@@ -100,11 +100,15 @@ function SezioniColorate() {
 }
 
 function CaroselloBratz() {
+  const idLeft = "carouselBratz";
+  const idRight = "carouselAccendini";
+
   return (
     <>
-      {/* Carusel Personaggi Bratz e accendini */}
-      <div className="container d-flex gap-5 justify-content-between p-3" >
-        <div id="carouselExampleIndicators2" className="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="10000" style={{ filter: "invert(1)", mixBlendMode: "screen", maxWidth: "30rem" }}>
+      <div className="row d-flex justify-content-center gap-4 p-3" >
+
+        {/* Carusel Personaggi Bratz */}
+        <div id={idLeft} className="col-auto col-md-6 carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="10000" style={{ filter: "invert(1)", mixBlendMode: "screen", maxWidth: "30rem" }}>
           <div className="carousel-inner">
             <div className="carousel-item active">
               <img src="/mockup/6.personaggi_bratz/BRATZ_1.jpg" className="d-block w-100" alt="..." />
@@ -119,20 +123,22 @@ function CaroselloBratz() {
               <img src="/mockup/6.personaggi_bratz/BRATZ_4.jpg" className="d-block w-100" alt="..." />
             </div>
           </div>
-          <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+          <button className="carousel-control-prev" type="button" data-bs-target={`#${idLeft}`} data-bs-slide="prev">
             <span className="carousel-control-prev-icon" aria-hidden="true"></span>
             <span className="visually-hidden">Previous</span>
           </button>
-          <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+          <button className="carousel-control-next" type="button" data-bs-target={`#${idLeft}`} data-bs-slide="next">
             <span className="carousel-control-next-icon" aria-hidden="true"></span>
             <span className="visually-hidden">Next</span>
           </button>
         </div>
-        <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel" data-bs-interval="10000" style={{ maxWidth: "30rem" }}>
+
+        {/* Carusel Accendini */}
+        <div id={idRight} className="col-auto col-md-6 carousel slide" data-bs-ride="carousel" data-bs-interval="10000" style={{ maxWidth: "30rem" }}>
           <div className="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target={`#${idRight}`} data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target={`#${idRight}`} data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target={`#${idRight}`} data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
           <div className="carousel-inner">
             <div className="carousel-item active">
@@ -151,21 +157,24 @@ function CaroselloBratz() {
               <img src="/mockup/5.accendini/mockup_accendino2.jpg" className="d-block w-100" alt="..." style={{ borderRadius: "8px" }} />
             </div>
           </div>
-          <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <button className="carousel-control-prev" type="button" data-bs-target={`#${idRight}`} data-bs-slide="prev">
             <span className="carousel-control-prev-icon" aria-hidden="true"></span>
             <span className="visually-hidden">Previous</span>
           </button>
-          <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <button className="carousel-control-next" type="button" data-bs-target={`#${idRight}`} data-bs-slide="next">
             <span className="carousel-control-next-icon" aria-hidden="true"></span>
             <span className="visually-hidden">Next</span>
           </button>
         </div>
+
       </div>
     </>
   );
 }
 
 function MiniPiatti({ cosa_manca }) {
+  const id = "carouselMiniPiatti";
+
   return (
     <>
       {/* Mini piatti */}
@@ -182,48 +191,48 @@ function MiniPiatti({ cosa_manca }) {
       {/* Carosello piatti fiori */}
       <div className="bg-black w-100 p-3">
         <div className="container text-center p-3" style={{ maxWidth: "48rem" }}>
-          <div id="carouselExampleIndicators3" className="carousel slide carousel-white-arrows" data-bs-ride="carousel" data-bs-interval="10000">
+          <div id={id} className="carousel slide carousel-white-arrows" data-bs-ride="carousel" data-bs-interval="10000">
             <div className="carousel-inner">
               <div className="carousel-item active">
-                <img src="/mockup/8.piatti/fiori_rossi.jpg" className="d-block w-100" alt="ops" style={{ borderRadius: "8px" }} />
+                <img className="d-block w-100" alt="ops" src="/mockup/8.piatti/fiori_rossi.jpg" style={{ borderRadius: "8px" }} />
               </div>
               <div className="carousel-item">
-                <img src="/mockup/8.piatti/fiori_arancio.jpg" className="d-block w-100" alt="ops" style={{ borderRadius: "8px" }} />
+                <img className="d-block w-100" alt="ops" src="/mockup/8.piatti/fiori_arancio.jpg" style={{ borderRadius: "8px" }} />
               </div>
               <div className="carousel-item">
-                <img src="/mockup/8.piatti/fiori_rosa.jpg" className="d-block w-100" alt="ops" style={{ borderRadius: "8px" }} />
+                <img className="d-block w-100" alt="ops" src="/mockup/8.piatti/fiori_rosa.jpg" style={{ borderRadius: "8px" }} />
               </div>
               <div className="carousel-item">
-                <img src="/mockup/8.piatti/fiori_viola.jpg" className="d-block w-100" alt="ops" style={{ borderRadius: "8px" }} />
+                <img className="d-block w-100" alt="ops" src="/mockup/8.piatti/fiori_viola.jpg" style={{ borderRadius: "8px" }} />
               </div>
               <div className="carousel-item">
-                <img src="/mockup/8.piatti/fiori_blu.jpg" className="d-block w-100" alt="ops" style={{ borderRadius: "8px" }} />
+                <img className="d-block w-100" alt="ops" src="/mockup/8.piatti/fiori_blu.jpg" style={{ borderRadius: "8px" }} />
               </div>
               <div className="carousel-item">
-                <img src="/mockup/8.piatti/fiori_azzurri.jpg" className="d-block w-100" alt="ops" style={{ borderRadius: "8px" }} />
+                <img className="d-block w-100" alt="ops" src="/mockup/8.piatti/fiori_azzurri.jpg" style={{ borderRadius: "8px" }} />
               </div>
               <div className="carousel-item">
-                <img src="/mockup/8.piatti/fiori_verde.jpg" className="d-block w-100" alt="ops" style={{ borderRadius: "8px" }} />
+                <img className="d-block w-100" alt="ops" src="/mockup/8.piatti/fiori_verde.jpg" style={{ borderRadius: "8px" }} />
               </div>
             </div>
-            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="prev">
+            <button className="carousel-control-prev" type="button" data-bs-target={`#${id}`} data-bs-slide="prev">
               <span className="carousel-control-prev-icon" aria-hidden="true"></span>
               <span className="visually-hidden">Previous</span>
             </button>
-            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="next">
+            <button className="carousel-control-next" type="button" data-bs-target={`#${id}`} data-bs-slide="next">
               <span className="carousel-control-next-icon" aria-hidden="true"></span>
               <span className="visually-hidden">Next</span>
             </button>
           </div>
         </div>
-        <style>
+        {/* <style>
           {`
             .carousel-white-arrows .carousel-control-prev-icon,
             .carousel-white-arrows .carousel-control-next-icon {
               filter: invert(1);
             }
           `}
-        </style>
+        </style> */}
       </div>
     </>
   );
