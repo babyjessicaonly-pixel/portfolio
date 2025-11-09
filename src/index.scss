@@ -6,6 +6,10 @@ $bootstrap-icons-font-dir: "bootstrap-icons/font/fonts";
     min-height: 100vh;
 }
 
+main {
+    flex: 1 0 auto;
+}
+
 /* Carousel */
 .carousel-indicators [data-bs-target] {
     width: 0.75rem !important;
