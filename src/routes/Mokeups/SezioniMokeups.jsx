@@ -3,6 +3,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // importante
 import AppPageLayout from "../../components/MainComponents";
 import { HeroNoCall } from "../../components/Hero";
 
+import 'animate.css';
 import './Mokeups.scss';
 
 export default function Mokeups() {
@@ -26,7 +27,7 @@ export default function Mokeups() {
       <FelpeNetflix />
 
       <div className="w-100 bg-black">
-      <div className="container row mx-auto justify-content-center p-3">
+        <div className="container row mx-auto justify-content-center gap-4 p-3">
         <div className="col-auto col-md-6 my-auto"><CaroselloFelpeAstratte /></div>
         <div className="col-auto col-md-6 my-auto"><CaroselloFelpeAnimaliSwag /></div>
       </div>
@@ -37,44 +38,61 @@ export default function Mokeups() {
 }
 
 function SezioniColorate() {
+  const sectionClass = "row d-flex justify-content-center align-items-center gap-4 gap-md-0 p-4";
+  const animationClass = "animate__animated animate__fast animate__fadeInLeft";
+  const imageLeftClass = "img-fluid rounded float-start";
+  const colRightClass = "mx-auto rounded-circle p-3 bg-white overflow-hidden shadow-lg";
+  const imageRightClass = "h-100 w-100 object-fit-contain";
+  const imageRightStyle = { width: "16rem", height: "16rem" };
+
   return (
     <>
       {/* Profumo disegno e mockup */}
-      <div className="section-profumo w-100 d-flex justify-content-center align-items-center p-4">
-        <img src="/mockup/1.profumo/bona.jpg" className="img-fluid rounded float-start" alt="ops"
-          style={{ width: "48%", marginRight: "4rem" }} />
-        <img src="/mockup/1.profumo/mockup_profumo.jpg" className="p-3 bg-white img-fluid rounded-circle float-end" alt="ops"
-          style={{ width: "16rem", height: "16rem" }} />
+      <div className={`section-profumo ${sectionClass}`}>
+        <div className="col-auto col-md-6 my-auto">
+          <img className={`${animationClass} ${imageLeftClass}`} alt="bona" src="/mockup/1.profumo/bona.jpg" />
+        </div>
+        <div className="col-auto col-md-6 my-auto">
+          <div style={imageRightStyle} className={`${colRightClass} ${animationClass} animate__delay-1s`}>
+            <img className={`${imageRightClass}`} alt="mockup profumo" src="/mockup/1.profumo/mockup_profumo.jpg" />
+          </div>
+        </div>
       </div>
 
 
       {/* Lumache disegno e mockup */}
-      <div className="bg-success bg-opacity-75 w-100 p-4">
-        <div className="container d-flex justify-content-between align-items-start" style={{ maxWidth: "60rem" }}>
-          <img src="/mockup/2.insalata/sfondi_lumache.jpg" className="img-fluid rounded float-start" alt="ops"
-            style={{ width: "48%", marginRight: "4rem", borderRadius: "8px" }} />
-          <img src="/mockup/2.insalata/mockup_insalata.jpg" className="img-fluid rounded float-end" alt="ops"
-            style={{ width: "48%", borderRadius: "8px" }} />
+      <div className={`section-insalata ${sectionClass}`}>
+        <div className="col-auto col-md-6 my-auto">
+          <img className={`${animationClass} ${imageLeftClass} animate__delay-1s`} alt="lumache" src="/mockup/2.insalata/sfondi_lumache.jpg" />
+        </div>
+        <div className="col-auto col-md-6 my-auto">
+          <div style={imageRightStyle} className={`${colRightClass} ${animationClass} animate__delay-2s`}>
+            <img className={`${imageRightClass}`} alt="mockup insalata" src="/mockup/2.insalata/mockup_insalata.jpg" />
+          </div>
         </div>
       </div>
 
       {/* Animali galleggianti disegno e mockup */}
-      <div className="w-100 p-4" style={{ backgroundColor: "rgb(53,123,161)" }}>
-        <div className="container d-flex justify-content-between align-items-start" style={{ maxWidth: "60rem" }}>
-          <img src="/mockup/4.bottiglie/animali_galleggianti.jpg" className="img-fluid rounded float-start" alt="ops"
-            style={{ width: "48%", marginRight: "4rem", borderRadius: "8px" }} />
-          <img src="/mockup/4.bottiglie/mockup_bottiglie.jpg" className="img-fluid rounded float-end" alt="ops"
-            style={{ width: "48%", borderRadius: "8px" }} />
+      <div className={`section-bottiglie ${sectionClass}`}>
+        <div className="col-auto col-md-6 my-auto">
+          <img className={`${animationClass} ${imageLeftClass} animate__delay-2s`} alt="animali galleggianti" src="/mockup/4.bottiglie/animali_galleggianti.jpg" />
+        </div>
+        <div className="col-auto col-md-6 my-auto">
+          <div style={imageRightStyle} className={`${colRightClass} ${animationClass} animate__delay-3s`}>
+            <img className={`${imageRightClass}`} alt="mockup bottiglie" src="/mockup/4.bottiglie/mockup_bottiglie.jpg" />
+          </div>
         </div>
       </div>
 
       {/* Rane disegno e mockup */}
-      <div className="w-100 p-4" style={{ backgroundColor: "rgb(127,156,206)" }}>
-        <div className="container d-flex justify-content-between align-items-start" style={{ maxWidth: "60rem" }}>
-          <img src="/mockup/3.shampoo/sfondi_rane.jpg" className="img-fluid rounded float-start" alt="ops"
-            style={{ width: "48%", marginRight: "1rem", borderRadius: "8px" }} />
-          <img src="/mockup/3.shampoo/mockup_shampoo.jpg" className="img-fluid rounded float-end" alt="ops"
-            style={{ width: "24%", borderRadius: "8px" }} />
+      <div className={`section-shampoo ${sectionClass}`}>
+        <div className="col-auto col-md-6 my-auto">
+          <img className={`${animationClass} ${imageLeftClass} animate__delay-3s`} alt="rane" src="/mockup/3.shampoo/sfondi_rane.jpg" />
+        </div>
+        <div className="col-auto col-md-6 my-auto">
+          <div style={imageRightStyle} className={`${colRightClass} ${animationClass} animate__delay-4s`}>
+            <img className={`${imageRightClass}`} alt="mockup shampoo" src="/mockup/3.shampoo/mockup_shampoo.jpg" />
+          </div>
         </div>
       </div>
     </>
