@@ -102,16 +102,16 @@ function CaroselloBratz() {
         <div id={idLeft} className="col-auto col-md-6 carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="10000" style={{ filter: "invert(1)", mixBlendMode: "screen", maxWidth: "30rem" }}>
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img src="/mockup/6.personaggi_bratz/BRATZ_1.jpg" className="d-block w-100" alt="..." />
+              <img className="d-block w-100" src="/mockup/6.personaggi_bratz/BRATZ_1.jpg" alt="..." />
             </div>
             <div className="carousel-item">
-              <img src="/mockup/6.personaggi_bratz/BRATZ_2.jpg" className="d-block w-100" alt="..." />
+              <img className="d-block w-100" src="/mockup/6.personaggi_bratz/BRATZ_2.jpg" alt="..." />
             </div>
             <div className="carousel-item">
-              <img src="/mockup/6.personaggi_bratz/BRATZ_3.jpg" className="d-block w-100" alt="..." />
+              <img className="d-block w-100" src="/mockup/6.personaggi_bratz/BRATZ_3.jpg" alt="..." />
             </div>
             <div className="carousel-item">
-              <img src="/mockup/6.personaggi_bratz/BRATZ_4.jpg" className="d-block w-100" alt="..." />
+              <img className="d-block w-100" src="/mockup/6.personaggi_bratz/BRATZ_4.jpg" alt="..." />
             </div>
           </div>
           <button className="carousel-control-prev" type="button" data-bs-target={`#${idLeft}`} data-bs-slide="prev">
@@ -133,19 +133,19 @@ function CaroselloBratz() {
           </div>
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img src="/mockup/6.personaggi_bratz/mockup_accendini/mockup_accendino3.jpg" className="d-block w-100" alt="..." style={{ borderRadius: "8px" }} />
+              <img className="d-block w-100" style={{ borderRadius: "8px" }} src="/mockup/6.personaggi_bratz/mockup_accendini/mockup_accendino3.jpg" alt="..." />
             </div>
             <div className="carousel-item">
-              <img src="/mockup/6.personaggi_bratz/mockup_accendini/mockup_accendino4.jpg" className="d-block w-100" alt="..." style={{ borderRadius: "8px" }} />
+              <img className="d-block w-100" style={{ borderRadius: "8px" }} src="/mockup/6.personaggi_bratz/mockup_accendini/mockup_accendino4.jpg" alt="..." />
             </div>
             <div className="carousel-item">
-              <img src="/mockup/6.personaggi_bratz/mockup_accendini/mockup_accendino5.jpg" className="d-block w-100" alt="..." style={{ borderRadius: "8px" }} />
+              <img className="d-block w-100" style={{ borderRadius: "8px" }} src="/mockup/6.personaggi_bratz/mockup_accendini/mockup_accendino5.jpg" alt="..." />
             </div>
             <div className="carousel-item">
-              <img src="/mockup/5.accendini/mockup_accendino1.jpg" className="d-block w-100" alt="..." style={{ borderRadius: "8px" }} />
+              <img className="d-block w-100" style={{ borderRadius: "8px" }} src="/mockup/5.accendini/mockup_accendino1.jpg" alt="..." />
             </div>
             <div className="carousel-item">
-              <img src="/mockup/5.accendini/mockup_accendino2.jpg" className="d-block w-100" alt="..." style={{ borderRadius: "8px" }} />
+              <img className="d-block w-100" style={{ borderRadius: "8px" }} src="/mockup/5.accendini/mockup_accendino2.jpg" alt="..." />
             </div>
           </div>
           <button className="carousel-control-prev" type="button" data-bs-target={`#${idRight}`} data-bs-slide="prev">
@@ -185,25 +185,25 @@ function MiniPiatti({ cosa_manca }) {
           <div id={id} className="carousel slide carousel-white-arrows" data-bs-ride="carousel" data-bs-interval="10000">
             <div className="carousel-inner">
               <div className="carousel-item active">
-                <img className="d-block w-100" alt="ops" src="/mockup/8.piatti/fiori_rossi.jpg" style={{ borderRadius: "8px" }} />
+                <img className="d-block w-100" style={{ borderRadius: "8px" }} src="/mockup/8.piatti/fiori_rossi.jpg" alt="ops" />
               </div>
               <div className="carousel-item">
-                <img className="d-block w-100" alt="ops" src="/mockup/8.piatti/fiori_arancio.jpg" style={{ borderRadius: "8px" }} />
+                <img className="d-block w-100" style={{ borderRadius: "8px" }} src="/mockup/8.piatti/fiori_arancio.jpg" alt="ops" />
               </div>
               <div className="carousel-item">
-                <img className="d-block w-100" alt="ops" src="/mockup/8.piatti/fiori_rosa.jpg" style={{ borderRadius: "8px" }} />
+                <img className="d-block w-100" style={{ borderRadius: "8px" }} src="/mockup/8.piatti/fiori_rosa.jpg" alt="ops" />
               </div>
               <div className="carousel-item">
-                <img className="d-block w-100" alt="ops" src="/mockup/8.piatti/fiori_viola.jpg" style={{ borderRadius: "8px" }} />
+                <img className="d-block w-100" style={{ borderRadius: "8px" }} src="/mockup/8.piatti/fiori_viola.jpg" alt="ops" />
               </div>
               <div className="carousel-item">
-                <img className="d-block w-100" alt="ops" src="/mockup/8.piatti/fiori_blu.jpg" style={{ borderRadius: "8px" }} />
+                <img className="d-block w-100" style={{ borderRadius: "8px" }} src="/mockup/8.piatti/fiori_blu.jpg" alt="ops" />
               </div>
               <div className="carousel-item">
-                <img className="d-block w-100" alt="ops" src="/mockup/8.piatti/fiori_azzurri.jpg" style={{ borderRadius: "8px" }} />
+                <img className="d-block w-100" style={{ borderRadius: "8px" }} src="/mockup/8.piatti/fiori_azzurri.jpg" alt="ops" />
               </div>
               <div className="carousel-item">
-                <img className="d-block w-100" alt="ops" src="/mockup/8.piatti/fiori_verde.jpg" style={{ borderRadius: "8px" }} />
+                <img className="d-block w-100" style={{ borderRadius: "8px" }} src="/mockup/8.piatti/fiori_verde.jpg" alt="ops" />
               </div>
             </div>
             <button className="carousel-control-prev" type="button" data-bs-target={`#${id}`} data-bs-slide="prev">
