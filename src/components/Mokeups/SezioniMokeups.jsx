@@ -1,6 +1,5 @@
 import './Mokeups.scss';
 
-import AppPageLayout from "../MainComponents";
 import { HeroNoCall } from "../Hero";
 import MokeupsFelpe from './MokeupsFelpe';
 
@@ -10,7 +9,7 @@ export default function Mokeups() {
   const cosa_manca = "allora ho messo le immagini ma tipo tabella fanno cagare, sopra volevo o mettere che scorrevano insieme tipo prima/dopo oppure non lo so dividere la riga in quattro, ci pensiamo. mentre per i caroselli volevo metterli anche loro uno a destra e uno a sinistra ma non so farlo, pero guarda che carini con i bordi tondi:)";
 
   return (
-    <AppPageLayout>
+    <>
 
       {/* Content */}
       <div className="overflow-hidden">
@@ -24,7 +23,7 @@ export default function Mokeups() {
 
       <MokeupsFelpe />
 
-    </AppPageLayout>
+    </>
   );
 }
 

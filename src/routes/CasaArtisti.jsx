@@ -1,4 +1,3 @@
-import AppPageLayout from "../components/MainComponents";
 import { HeroNoCall } from "../components/Hero";
 
 export default function CasaArtisti() {
@@ -7,7 +6,7 @@ export default function CasaArtisti() {
   const personaggi_description = "A paragraph of placeholder text. We’re using it here to show the use of the clearfix class. We’re adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.";
 
   return (
-    <AppPageLayout>
+    <>
 
       {/* Content */}
       <div className="overflow-hidden">
@@ -106,6 +105,6 @@ export default function CasaArtisti() {
         </div>
       </div>
 
-    </AppPageLayout>
+    </>
   )
 }

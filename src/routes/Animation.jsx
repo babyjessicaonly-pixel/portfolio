@@ -1,4 +1,3 @@
-import AppPageLayout from "../components/MainComponents";
 import { HeroNoCall } from "../components/Hero";
 import AnimationFanculo from '../components/Animation/AnimationFanculo';
 
@@ -7,7 +6,7 @@ export default function Animation() {
   const hero = "Prima ancora della passione per i mockup mi ha affascinato il mondo dell'animazione.";
 
   return (
-    <AppPageLayout>
+    <>
 
       {/* Content */}
       <div className="overflow-hidden">
@@ -28,6 +27,6 @@ export default function Animation() {
 
       <AnimationFanculo />
 
-    </AppPageLayout>
+    </>
   );
 }

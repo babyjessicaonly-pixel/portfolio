@@ -1,4 +1,3 @@
-import AppPageLayout from "../components/MainComponents";
 import { HeroNoCall } from "../components/Hero";
 
 export default function PersonaggiAllucinati() {
@@ -11,7 +10,7 @@ export default function PersonaggiAllucinati() {
   const gpt_prompt = "Create a funny short story about crazy characters in a dreamlike adventure, involving a land made of pastries and animals riding motorcycles.";
 
   return (
-    <AppPageLayout>
+    <>
 
       {/* Content */}
       <div className="overflow-hidden">
@@ -159,6 +158,6 @@ export default function PersonaggiAllucinati() {
         </div>
       </div>
 
-    </AppPageLayout>
+    </>
   )
 }
