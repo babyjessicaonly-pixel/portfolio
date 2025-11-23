@@ -1,5 +1,3 @@
-import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // importante
-
 import AppPageLayout from "../components/MainComponents";
 import { HeroNoCall } from "../components/Hero";
 
