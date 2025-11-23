@@ -6,22 +6,23 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import App from './routes/App.jsx'
+import Home from './routes/Home.jsx'
 import CasaArtisti from './routes/CasaArtisti.jsx'
 import PersonaggiAllucinati from './routes/PersonaggiAllucinati.jsx';
 import Mokeups from './components/Mokeups/SezioniMokeups.jsx';
 import Animation from './routes/Animation.jsx';
+import AppLayout from './components/Layout/AppLayout.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/la-casa-degli-artisti" element={<CasaArtisti />} />
-        <Route path="/personaggi-allucinati" element={<PersonaggiAllucinati />} />
-        <Route path="/mokeups" element={<Mokeups />} />
-        <Route path="/animation" element={<Animation />} />
+        <Route path="/"                      element={<AppLayout> <Home />                 </AppLayout>} />
+        <Route path="/la-casa-degli-artisti" element={<AppLayout> <CasaArtisti />          </AppLayout>} />
+        <Route path="/personaggi-allucinati" element={<AppLayout> <PersonaggiAllucinati /> </AppLayout>} />
+        <Route path="/mokeups"               element={<AppLayout> <Mokeups />              </AppLayout>} />
+        <Route path="/animation"             element={<AppLayout> <Animation />            </AppLayout>} />
       </Routes>
     </BrowserRouter>
-  </StrictMode>,
-)
+  </StrictMode>
+);
