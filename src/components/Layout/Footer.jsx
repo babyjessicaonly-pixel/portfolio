@@ -6,15 +6,15 @@ const Footer = () => (
     <footer className="bd-footer px-4 py-5 bg-body-tertiary text-body-secondary" style={{ filter: "grayscale(1)" }}>
         <div className="container">
             <div className="row gap-5">
-                <div className="d-none d-lg-block col-lg-3 border-end"><ColumnLeft /></div>         {/* Prima Colonna (Desktop) */}
-                <div className="d-lg-none col-lg-3"><ColumnLeft /></div>                            {/* Prima Colonna (Mobile) */}
-                <ColumnRight />                                                                     {/* Seconda Colonna */}
+                <MainColumn />                       {/* Prima Colonna */}
+                <SectionsColumn />                   {/* Colonna delle sezioni */}
+                <ContentColumn />                    {/* Colonna dei link del materiale */}
             </div>
         </div>
     </footer>
 );
 
-function ColumnLeft() {
+function MainColumn() {
     const appName = useMemo(() => "Rachele Pelliccioni", []);
     const appDescription = useMemo(() => "Portfolio realizzato con tutto l'amore del mondo e con: Bootstrap, React, Vite, due esseri umani e un'intelligenza artificiale.", []);
 
@@ -28,7 +28,7 @@ function ColumnLeft() {
     }), []);
 
     return (
-        <>
+        <div className="col-lg-4 border-end-lg">
             <a className="d-inline-flex align-items-center text-decoration-none mb-4" href="/" aria-label="Bootstrap">
                 <img src={favicon_inv} alt="Logo" width="64" height="64" className="me-3" />
                 <span className="lead">{appName}</span>
@@ -53,11 +53,11 @@ function ColumnLeft() {
                 <p>© 2025</p>
 
             </ul>
-        </>
+        </div>
     );
 }
 
-function ColumnRight() {
+function SectionsColumn() {
     const linksHeader = useMemo(() => "Esplora le sezioni", []);
 
     const sections = useMemo(() => ([
@@ -68,12 +68,36 @@ function ColumnRight() {
     ]), []);
 
     return (
-        <div className="col col-lg-6">                                                      {/* Seconda Colonna */}
+        <div className="col-lg-3 border-end-lg">                                        {/* Seconda Colonna */}
             <p className="lead">{linksHeader}</p>                                           {/* Esplora le sezioni */}
             <ul className="list-unstyled">                                                  {/* Link Sezioni */}
                 {sections.map((link, index) => (
                     <li className="mb-2" key={index}>
                         <a className="icon-link icon-link-hover text-decoration-none align-items-baseline" href={link.href}>
+                            <i className="bi bi-arrow-right-short"></i>
+                            {link.label}
+                        </a>
+                    </li>
+                ))}
+            </ul>
+        </div>
+    );
+}
+
+function ContentColumn() {
+    const linksHeader = useMemo(() => "Materiale", []);
+
+    const sections = useMemo(() => ([
+        { href: "/Portfolio.pdf", label: "Scarica il portfolio" },
+    ]), []);
+
+    return (
+        <div className="col-lg-3">
+            <p className="lead">{linksHeader}</p>                                           {/* Titolo */}
+            <ul className="list-unstyled">                                                  {/* Link Materiali */}
+                {sections.map((link, index) => (
+                    <li className="mb-2" key={index}>
+                        <a className="icon-link icon-link-hover text-decoration-none align-items-baseline" href={link.href} target="_blank" rel="noopener">
                             <i className="bi bi-arrow-right-short"></i>
                             {link.label}
                         </a>
