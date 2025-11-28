@@ -98,7 +98,7 @@ function CaroselloBratz() {
       <div className="row d-flex justify-content-center gap-4 p-3" >
 
         {/* Carusel Personaggi Bratz */}
-        <div id={idLeft} className="col-auto col-md-6 carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="10000" style={{ filter: "invert(1)", mixBlendMode: "screen", maxWidth: "30rem" }}>
+        <div id={idLeft} className="col-auto col-md-6 carousel slide carousel-fade blend-invert-lighten" data-bs-ride="carousel" data-bs-interval="10000" style={{ maxWidth: "30rem" }}>
           <div className="carousel-inner">
             <div className="carousel-item active">
               <img className="d-block w-100" src="/mockup/6.personaggi_bratz/BRATZ_1.jpg" alt="..." />

@@ -54,7 +54,7 @@ export default function CasaArtisti() {
 
         <div className="row mx-auto container text-center p-3" style={{ maxWidth: "48rem" }}>
           <div className='col-md-8'>
-            <div id="carouselExampleIndicators2" className="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="10000" style={{ filter: "invert(1)", mixBlendMode: "screen" }}>
+            <div id="carouselExampleIndicators2" className="carousel slide carousel-fade blend-invert-lighten" data-bs-ride="carousel" data-bs-interval="10000">
               <div className="carousel-inner">
                 <div className="carousel-item active">
                   <img src="/artisti/personaggi/artisti_p1.jpg" className="d-block w-100" alt="..." />

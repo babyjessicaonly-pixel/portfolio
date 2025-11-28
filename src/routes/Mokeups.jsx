@@ -58,7 +58,7 @@ export default function Mokeups() {
 
       {/* Carusel Personaggi Bratz e accendini */}
       <div className="container d-flex gap-5 justify-content-between p-3" >
-        <div id="carouselExampleIndicators2" className="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="10000" style={{ filter: "invert(1)", mixBlendMode: "screen", maxWidth: "30rem"}}>
+        <div id="carouselExampleIndicators2" className="carousel slide carousel-fade blend-invert-lighten" data-bs-ride="carousel" data-bs-interval="10000" style={{ maxWidth: "30rem"}}>
           <div className="carousel-inner">
             <div className="carousel-item active">
               <img src="/mockup/6.personaggi_bratz/BRATZ_1.jpg" className="d-block w-100" alt="..." />

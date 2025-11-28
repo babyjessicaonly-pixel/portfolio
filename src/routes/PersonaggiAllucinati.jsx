@@ -71,7 +71,7 @@ export default function PersonaggiAllucinati() {
         <div className="col-md-4 m-auto text-dark" style={{ maxWidth: "30rem" }}>
 
           {/* Motocross Carousel */}
-          <div id="carouselExampleIndicators2" className="carousel slide carousel-fade border-top border-bottom my-5" data-bs-ride="carousel" data-bs-interval="10000" style={{ mixBlendMode: "multiply" }}>
+          <div id="carouselExampleIndicators2" className="carousel slide carousel-fade border-top border-bottom my-5 blend-multiply" data-bs-ride="carousel" data-bs-interval="10000">
             <div className="carousel-inner">
               <div className="carousel-item active">
                 <img src="/avventure/personaggi moto/lay2.1_motocross_uccello.jpg" className="d-block w-100" alt="..." />
