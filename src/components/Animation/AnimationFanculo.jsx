@@ -20,29 +20,7 @@ export default function AnimationFanculo() {
         <img className="felpa-card border img-fluid rounded-5 shadowimg-fanculo" alt="moto" src="/fanculo/personaggi/patrik.jpg" />
         <img className="felpa-card border img-fluid rounded-5 shadowimg-fanculo" alt="moto" src="/fanculo/personaggi/angelo.jpg" />
       </div>
-
-      {/* <div className="container d-flex flex-wrap">
-        <div className="col-md-3 my-auto">
-          <img className="img-fanculo blend-invert-lighten" alt="moto" src="/fanculo/personaggi/madre.jpg" />
-        </div>
-
-        <div className="col-md-3 my-auto">
-          <img className="img-fanculo blend-invert-lighten" alt="moto" src="/fanculo/personaggi/amedeo.jpg" />
-        </div>
-
-        <div className="col-md-3 my-auto">
-          <img className="img-fanculo blend-invert-lighten" alt="moto" src="/fanculo/personaggi/marco.jpg" />
-        </div>
-
-        <div className="col-md-3 my-auto">
-          <img className="img-fanculo blend-invert-lighten" alt="moto" src="/fanculo/personaggi/patrik.jpg" />
-        </div>
-
-        <div className="col-md-3 my-auto">
-          <img className="img-fanculo blend-invert-lighten" alt="moto" src="/fanculo/personaggi/angelo.jpg" />
-        </div>
-      </div> */}
-
+      
     </div>
   );
 }
