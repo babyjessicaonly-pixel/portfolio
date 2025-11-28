@@ -33,3 +33,9 @@ main {
     mix-blend-mode: multiply;
 }
 
+/* Border End Responsive */
+.border-end-lg {
+    @media (min-width: 992px) {
+        border-right: var(--bs-border-width) solid var(--bs-border-color) !important;
+    }
+}
